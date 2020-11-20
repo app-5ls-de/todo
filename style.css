@@ -29,6 +29,13 @@ body {
 .list-container {
     min-height: 60vh;
 }
+
+.list-container>.title,.list-container>.subtitle {
+    text-align: center;
+    margin: 0.5rem;
+    text-transform: uppercase;
+}
+
 .list-container>.subtitle {
     font-size: smaller;
 }
