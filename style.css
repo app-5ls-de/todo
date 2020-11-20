@@ -63,3 +63,12 @@ hr.vr {
     font-size: smaller;
 }
 
+.item {
+    overflow-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
