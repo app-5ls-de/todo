@@ -16,7 +16,7 @@ function List(title, subtitle) {
 }
 
 List.prototype.add = function (text) {
-    let child = el(".item", text)
+    let child = new Item(text)
     this.childs.push(child)
     mount(this.list, child)
 }
