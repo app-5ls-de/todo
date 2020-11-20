@@ -19,6 +19,7 @@ var someday_lists = document.getElementById("someday-lists")
 var now = dayjs()
 let date = now.add(-2, 'day')
 for (let index = 0; index < 5; index++) {
+    if (index) mount(date_lists,el("hr.vr"))
     date = date.add(1, 'day')
     let list = new List(date.format("dddd"), date.format("D. MMMM YYYY"))
     mount(date_lists, list)
