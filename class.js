@@ -8,7 +8,6 @@ function List(title, subtitle) {
 
     new Sortable(this.list, {
         group: 'shared',
-        filter: '.edit',
         animation: 150
     })
 
