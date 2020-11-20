@@ -38,6 +38,12 @@ hr.vr {
     border-left: 1px solid lightgray;
 }
 
+.lists {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr) 1px);
+    column-gap: 10px;
+    margin-bottom: 3rem;
+}
 
 .lists#date-lists {
     flex-grow: 1;
