@@ -65,6 +65,8 @@ hr.vr {
 
 .item {
     overflow-wrap: break-word;
+    border-top: 1px solid lightgray;
+    padding: 0.4rem 0.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-user-select: none;
