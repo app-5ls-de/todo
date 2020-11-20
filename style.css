@@ -25,6 +25,10 @@ body {
     width: 100%;
 }
 
+
+.list-container {
+    min-height: 60vh;
+}
 .list-container>.subtitle {
     font-size: smaller;
 }
