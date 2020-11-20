@@ -7,7 +7,7 @@ html,body {
 body {
     display: flex;
     flex-direction: column;
-} 
+}
 
 .main{
     margin: 0 1rem;
@@ -74,4 +74,18 @@ hr.vr {
     user-select: none;
     white-space: nowrap;
     min-height: 1rem;
+}
+
+.item.checked {
+    text-decoration: line-through;
+    color: darkgray;
+    opacity: 0.5;
+}
+
+.item.sortable-ghost {
+    /* opacity: 0.4; */
+}
+
+.item.sortable-chosen:not(.sortable-ghost) {
+    border: none;
 }
