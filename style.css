@@ -29,6 +29,15 @@ body {
     width: 100%;
 }
 
+hr.vr {
+    display: inline-block; 
+    width:1px; 
+    height:100%; 
+    margin: 0;
+    border: none;
+    border-left: 1px solid lightgray;
+}
+
 
 .lists#date-lists {
     flex-grow: 1;
