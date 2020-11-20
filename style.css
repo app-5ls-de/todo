@@ -11,5 +11,9 @@ html,body {
 .header>h1 {
     margin: 0;
 }
+
+.divider {
+    width: 100%;
+}
 }
 
