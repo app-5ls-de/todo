@@ -10,7 +10,11 @@ body {
 } 
 
 .main{
+    margin: 0 1rem;
     flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
 } 
 
 .header {
@@ -25,6 +29,10 @@ body {
     width: 100%;
 }
 
+
+.lists#date-lists {
+    flex-grow: 1;
+}
 
 .list-container {
     min-height: 60vh;
