@@ -24,7 +24,7 @@ for (let index = 0; index < 5; index++) {
     let list = new List(date.format("dddd"), date.format("D. MMMM YYYY"))
     mount(date_lists, list)
 
-    let max = Math.random() * 10
+    let max = Math.random() * 20
     for (let i = 0; i < max; i++) {
         list.add(i)
     }
