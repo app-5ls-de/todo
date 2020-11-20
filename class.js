@@ -23,7 +23,29 @@ List.prototype.add = function (text) {
 
 
 function Item(text) {
-    this.text = text
-    this.el = el(".item", text)
+    this.data = {}
+    this.data.checked = false
+
+    this.el = el(".item", this.data.text = text)
+    if (this.data.checked) el.classList.add("checked")
+    
+    this.el.addEventListener("click", (e) => this.click(this,e))
+}
+
+Item.prototype.click = function (self,e) {
+    console.log(self.data.text)
+    if (self.data.checked) {
+        self.el.classList.remove("checked")
+    } else {
+        self.el.classList.add("checked")
+    }
+    self.data.checked = !self.data.checked
+}
+
+
+
+
+
+
 }
 
