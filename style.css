@@ -59,8 +59,12 @@ hr.vr {
     text-transform: uppercase;
 }
 
+.list-container>.title {
+    font-size: large;
+}
+
 .list-container>.subtitle {
-    font-size: smaller;
+    font-size: small;
 }
 
 .item {
