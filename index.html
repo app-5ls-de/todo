@@ -48,6 +48,23 @@
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.12.0"></script>
     <script src="/class.js"></script>
     <script src="/script.js"></script>
+    
+    <script>
+        if ("serviceWorker" in navigator) {
+            if (navigator.serviceWorker.controller) {
+                console.log("[ServiceWorker] active service worker found");
+            } else {
+                // Register the service worker
+                navigator.serviceWorker
+                    .register("/service-worker.js", {
+                        scope: "/"
+                    })
+                    .then(function (reg) {
+                        console.log('[ServiceWorker] Service worker registered.', reg);
+                    });
+            }
+        }
+    </script>
 
 </body>
 
