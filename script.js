@@ -31,7 +31,6 @@ for (let index = 0; index < 5; index++) {
 
 }
 
-date = date.add(1, 'day')
 let list = new List("Someday")
 mount(someday_lists, list)
 let max = Math.random() * 10
